@@ -58,22 +58,22 @@
 
 ## manual execute cpWithVariable.sh
 pwd
-cd ./case_z_20Layer
-	&& sh cpWithVariable.sh
-	cd ..
+cd ./case_z_20Layer &&
+sh cpWithVariable.sh
+cd ..
 	
-cd ./case_z_40Layer
-	&& sh cpWithVariable.sh
-	cd ..
+cd ./case_z_40Layer &&
+sh cpWithVariable.sh
+cd ..
 	
-cd ./case_z_60Layer
-	&& sh cpWithVariable.sh
-	cd ..
+cd ./case_z_60Layer &&
+sh cpWithVariable.sh
+cd ..
 	
 cd ./case_z_80Layer
-	&& sh cpWithVariable.sh
-	cd ..
+&& sh cpWithVariable.sh
+cd ..
 
-cd ./case_z_100Layer
-	&& sh cpWithVariable.sh
-	echo "finsh"
+cd ./case_z_100Layer &&
+sh cpWithVariable.sh
+echo "finsh"
