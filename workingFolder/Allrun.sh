@@ -21,6 +21,25 @@
 ## copy case setting script to the working directories
 ## Thu Jul  5 12:07:36 EDT 2018
 
+# curdir=$(pwd)
+
+#     for f in $curdir/*
+
+#         do [ -d $f ] &&
+
+#             cd "$f" &&
+
+#             echo Entering into $f &&
+
+#                {
+# 		   cp ../../preparingFolder/prepareScript/cpWithVariable.sh ./
+# 	       }
+
+#        done;
+
+## execute cpWithVariable.sh
+## Thu Jul  5 12:11:10 EDT 2018
+
 curdir=$(pwd)
 
     for f in $curdir/*
@@ -32,7 +51,7 @@ curdir=$(pwd)
             echo Entering into $f &&
 
                {
-		   cp ../../preparingFolder/prepareScript/cpWithVariable.sh ./
+		   sh ./cpWithVariable.sh
 	       }
 
        done;
