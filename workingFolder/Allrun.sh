@@ -57,23 +57,48 @@
 #        done;
 
 ## manual execute cpWithVariable.sh
-pwd
-cd ./case_z_20Layer &&
-sh cpWithVariable.sh
-cd ..
+# cd ./case_z_20Layer
+# pwd
+# sh cpWithVariable.sh
+# cd ..
 	
-cd ./case_z_40Layer &&
-sh cpWithVariable.sh
-cd ..
+# cd ./case_z_40Layer
+# pwd
+# sh cpWithVariable.sh
+# cd ..
 	
-cd ./case_z_60Layer &&
-sh cpWithVariable.sh
-cd ..
+# cd ./case_z_60Layer
+# pwd
+# sh cpWithVariable.sh
+# cd ..
 	
-cd ./case_z_80Layer
-&& sh cpWithVariable.sh
-cd ..
+# cd ./case_z_80Layer
+# pwd
+# sh cpWithVariable.sh
+# cd ..
 
-cd ./case_z_100Layer &&
-sh cpWithVariable.sh
-echo "finsh"
+# cd ./case_z_100Layer
+# pwd
+# sh cpWithVariable.sh
+# cd ..
+
+# echo "finsh"
+
+
+## testing path
+
+curdir=$(pwd)
+
+    for f in $curdir/*
+
+        do [ -d $f ] &&
+
+            cd "$f" &&
+
+            echo Entering into $f &&
+
+               {
+		   cp ../../preparingFolder/prepareScript/cpTest.sh ./
+	       }
+
+       done;
