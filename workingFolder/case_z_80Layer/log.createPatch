@@ -1,0 +1,63 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.1
+Exec   : createPatch
+Date   : Jul 05 2018
+Time   : 13:34:44
+Host   : "cp1607"
+PID    : 5403
+Case   : /scratch/superran/lengthEffect/workingFolder/case_z_80Layer
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading createPatchDict
+
+Adding new patch FRONT_CYC as patch 5 from 
+{
+    type            cyclic;
+    neighbourPatch  BACK_CYC;
+    matchTolerance  0.01;
+}
+
+Adding new patch BACK_CYC as patch 6 from 
+{
+    type            cyclic;
+    neighbourPatch  FRONT_CYC;
+    matchTolerance  0.01;
+}
+
+
+Moving faces from patch FRONT to patch 5
+Moving faces from patch BACK to patch 6
+
+Doing topology modification to order faces.
+
+Dumping FRONT_CYC faces to "coupled_FRONT_CYC.obj"
+Dumping BACK_CYC faces to "coupled_BACK_CYC.obj"
+Dumping cyclic match as lines between face centres to "coupled_FRONT_CYCBACK_CYC_match.obj"
+Not synchronising points.
+
+Removing patches with no faces in them.
+
+Removing zero-sized patch FRONT type wall at position 0
+Removing zero-sized patch BACK type wall at position 4
+Removing patches.
+Dumping FRONT_CYC faces to "final_FRONT_CYC.obj"
+Dumping BACK_CYC faces to "final_BACK_CYC.obj"
+Dumping cyclic match as lines between face centres to "final_FRONT_CYCBACK_CYC_match.obj"
+Writing repatched mesh to 0.03
+
+End
+

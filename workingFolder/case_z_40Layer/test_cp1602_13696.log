@@ -1,0 +1,34 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) StdEnv/2016.4     4) gcccore/.5.4.0      7) imkl/11.3.4.258
+  2) nixpkgs/16.09     5) ifort/.2016.4.258   8) openmpi/2.1.1
+  3) icc/.2016.4.258   6) intel/2016.4
+
+Usage: createPatch [OPTIONS]
+options:
+  -case <dir>       specify alternate case directory, default is the cwd
+  -dict <file>      read control dictionary from specified location
+  -noFunctionObjects
+                    do not execute functionObjects
+  -overwrite        overwrite existing mesh/results files
+  -parallel         run in parallel
+  -region <name>    specify alternative mesh region
+  -roots <(dir1 .. dirN)>
+                    slave root directories for distributed running
+  -srcDoc           display source code in browser
+  -doc              display application documentation in browser
+  -help             print the usage
+
+Using: OpenFOAM-4.1 (see www.OpenFOAM.org)
+Build: 4.1
+
+
+
+--> FOAM FATAL ERROR: 
+Wrong number of arguments, expected 0 found 1
+
+
+FOAM exiting
+
+mv: cannot stat '0.03/polyMesh': No such file or directory
