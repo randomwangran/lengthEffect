@@ -14,7 +14,7 @@ do [ -d $f ] &&
        echo ${PWD##*/} &&
 
        ## copy the template case files
-
+       echo "this is magic!!!"
        cp -r ../../preparingFolder/prepareCase/settingFromRe14E3/* ./  &&
        howManyLayer=$((echo "${PWD//Layer}") | cut -d'_' -f 3 ) &&
 

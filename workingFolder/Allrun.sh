@@ -100,7 +100,8 @@ curdir=$(pwd)
                {
 		   #cp ../../preparingFolder/prepareScript/cpTest.sh ./
 		   #sh cpTest.sh
-  		   cp -f ../../preparingFolder/prepareScript/cpWithVariable.sh ./
+  		   #cp -f ../../preparingFolder/prepareScript/cpWithVariable.sh ./
+		   sh cpWithVariable.sh
 	       }
 
        done;
