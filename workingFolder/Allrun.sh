@@ -98,7 +98,16 @@ curdir=$(pwd)
             echo Entering into $f &&
 
                {
-		   cp ../../preparingFolder/prepareScript/cpTest.sh ./
+		   #cp ../../preparingFolder/prepareScript/cpTest.sh ./
+		   #sh cpTest.sh
+  		   cp -f ../../preparingFolder/prepareScript/cpWithVariable.sh ./
 	       }
 
        done;
+
+
+
+ 		   
+
+
+    

@@ -15,7 +15,7 @@ do [ -d $f ] &&
 
        ## copy the template case files
 
-       cp -r ../preparingFolder/prepareCase/settingFromRe14E3/* ./  &&
+       cp -r ../../preparingFolder/prepareCase/settingFromRe14E3/* ./  &&
        howManyLayer=$((echo "${PWD//Layer}") | cut -d'_' -f 3 ) &&
 
        ## do the math to calculate the length of the cylinder
