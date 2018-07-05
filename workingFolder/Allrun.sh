@@ -40,18 +40,25 @@
 ## execute cpWithVariable.sh
 ## Thu Jul  5 12:11:10 EDT 2018
 
-curdir=$(pwd)
+# curdir=$(pwd)
 
-    for f in $curdir/*
+#     for f in $curdir/*
 
-        do [ -d $f ] &&
+#         do [ -d $f ] &&
 
-            cd "$f" &&
+#             cd "$f" &&
 
-            echo Entering into $f &&
+#             echo Entering into $f &&
 
-               {
-		   sh ./cpWithVariable.sh
-	       }
+#                {
+# 		   sh ./cpWithVariable.sh
+# 	       }
 
-       done;
+#        done;
+
+## manual execute cpWithVariable.sh
+cd case_z_20Layer && cpWithVariable.sh
+cd case_z_40Layer && cpWithVariable.sh
+cd case_z_60Layer && cpWithVariable.sh
+cd case_z_80Layer && cpWithVariable.sh
+cd case_z_100Layer && cpWithVariable.sh
