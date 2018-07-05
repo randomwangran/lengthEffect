@@ -57,8 +57,8 @@
 #        done;
 
 ## manual execute cpWithVariable.sh
-cd case_z_20Layer && cpWithVariable.sh
-cd case_z_40Layer && cpWithVariable.sh
-cd case_z_60Layer && cpWithVariable.sh
-cd case_z_80Layer && cpWithVariable.sh
-cd case_z_100Layer && cpWithVariable.sh
+cd case_z_20Layer && sh cpWithVariable.sh
+cd case_z_40Layer && sh cpWithVariable.sh
+cd case_z_60Layer && sh cpWithVariable.sh
+cd case_z_80Layer && sh cpWithVariable.sh
+cd case_z_100Layer && sh cpWithVariable.sh
