@@ -101,7 +101,8 @@ curdir=$(pwd)
 		   #cp ../../preparingFolder/prepareScript/cpTest.sh ./
 		   #sh cpTest.sh
   		   #cp -f ../../preparingFolder/prepareScript/cpWithVariable.sh ./
-		   sh cpWithVariable.sh
+		   #sh cpWithVariable.sh
+		   sbatch --job-name=lengthEffect --output=test_%N_%J.log ./test.pbs pisoFoam
 	       }
 
        done;
