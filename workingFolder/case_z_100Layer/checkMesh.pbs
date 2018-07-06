@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH --account=def-dting
+#SBATCH --ntasks=1
+#SBATCH --mem=31G
+#SBATCH --time=05-00:00
+
+module purge
+module load openfoam/4.1
+
+checkMesh > log.checkMesh 2>&1
