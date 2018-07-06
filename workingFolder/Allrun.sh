@@ -87,31 +87,52 @@
 
 ## testing path
 
-curdir=$(pwd)
+# curdir=$(pwd)
 
-    for f in $curdir/*
+#     for f in $curdir/*
 
-        do [ -d $f ] &&
+#         do [ -d $f ] &&
 
-            cd "$f" &&
+#             cd "$f" &&
 
-            echo Entering into $f &&
+#             echo Entering into $f &&
 
-               {
-		   #cp ../../preparingFolder/prepareScript/cpTest.sh ./
-		   #sh cpTest.sh
-  		   #cp -f ../../preparingFolder/prepareScript/cpWithVariable.sh ./
-		   #sh cpWithVariable.sh
-		   #cp -f ../../preparingFolder/prepareScript/mp2NewPreRunScript.pbs ./
-		   #sbatch --job-name=lengthEffect --output=test_%N_%J.log ./mp2NewPreRunScript.pbs pisoFoam
-		   sbatch --job-name=checkMesh --output=checkMesh_%N_%J.log ./checkMesh.pbs checkMesh
-	       }
+#                {
+# 		   #cp ../../preparingFolder/prepareScript/cpTest.sh ./
+# 		   #sh cpTest.sh
+#   		   #cp -f ../../preparingFolder/prepareScript/cpWithVariable.sh ./
+# 		   #sh cpWithVariable.sh
+# 		   #
+# 		   #sbatch --job-name=lengthEffect --output=test_%N_%J.log ./mp2NewPreRunScript.pbs pisoFoam
+# 		   cp -f ../../preparingFolder/prepareScript/checkMesh.pbs ./ &&
+# 		   sbatch --job-name=checkMesh --output=checkMesh_%N_%J.log ./checkMesh.pbs checkMesh
+# 	       }
 
-       done;
+#        done;
+
+## gather jobinformation
+cd /home/superran/scratch/lengthEffect/workingFolder/case_z_100Layer
+sacct -j 13699 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem > log.jobInfo
+cat log.checkMesh | grep cells: >> log.jobInfo
 
 
+cd /home/superran/scratch/lengthEffect/workingFolder/case_z_20Layer
+sacct -j 13700 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem > log.jobInfo
+cat log.checkMesh | grep cells: >> log.jobInfo
 
- 		   
+
+cd /home/superran/scratch/lengthEffect/workingFolder/case_z_40Layer
+sacct -j 13701 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem > log.jobInfo
+cat log.checkMesh | grep cells: >> log.jobInfo
 
 
-    
+cd /home/superran/scratch/lengthEffect/workingFolder/case_z_60Layer
+sacct -j 13702 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem > log.jobInfo
+cat log.checkMesh | grep cells: >> log.jobInfo
+
+
+cd /home/superran/scratch/lengthEffect/workingFolder/case_z_80Layer
+sacct -j 13703 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem > log.jobInfo
+cat log.checkMesh | grep cells: >> log.jobInfo
+
+

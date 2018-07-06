@@ -4,3 +4,4 @@ The following modules were not unloaded:
   1) StdEnv/2016.4     4) gcccore/.5.4.0      7) imkl/11.3.4.258
   2) nixpkgs/16.09     5) ifort/.2016.4.258   8) openmpi/2.1.1
   3) icc/.2016.4.258   6) intel/2016.4
+slurmstepd: error: *** JOB 13699 ON cp1613 CANCELLED AT 2018-07-06T11:09:16 ***
