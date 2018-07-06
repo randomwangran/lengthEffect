@@ -1,0 +1,40 @@
+I am in: 
+/home/newuser/scratch/lengthEffect/workingFolder/case_z_100Layer
+       JobID    Elapsed      NCPUS     AveRSS     MaxRSS  AveVMSize     ReqMem 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+13699.batch    21:35:11         24   3743510K   3800206K  21826016K       31Gn 
+Case mesh contains 
+    cells:            1440000
+=======================================================
+I am in: 
+/home/newuser/scratch/lengthEffect/workingFolder/case_z_20Layer
+       JobID    Elapsed      NCPUS     AveRSS     MaxRSS  AveVMSize     ReqMem 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+13700.batch    03:35:13         24   1913933K   1953179K  19062444K       31Gn 
+Case mesh contains 
+    cells:            288000
+=======================================================
+I am in: 
+/home/newuser/scratch/lengthEffect/workingFolder/case_z_40Layer
+       JobID    Elapsed      NCPUS     AveRSS     MaxRSS  AveVMSize     ReqMem 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+13701.batch    09:46:27         24   2329258K   2405771K  19580912K       31Gn 
+Case mesh contains 
+    cells:            576000
+=======================================================
+I am in: 
+/home/newuser/scratch/lengthEffect/workingFolder/case_z_60Layer
+       JobID    Elapsed      NCPUS     AveRSS     MaxRSS  AveVMSize     ReqMem 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+13702.batch    16:42:47         24   2777944K   2875499K  20423644K       31Gn 
+Case mesh contains 
+    cells:            864000
+=======================================================
+I am in: 
+/home/newuser/scratch/lengthEffect/workingFolder/case_z_80Layer
+       JobID    Elapsed      NCPUS     AveRSS     MaxRSS  AveVMSize     ReqMem 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+13703.batch    18:27:01         24   2225055K   3324466K  15583600K       31Gn 
+Case mesh contains 
+    cells:            1152000
+=======================================================

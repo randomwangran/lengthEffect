@@ -1,6 +1,10 @@
+I am in: 
+/home/superran/scratch/lengthEffect/workingFolder/case_z_80Layer
        JobID    Elapsed      NCPUS     AveRSS     MaxRSS  AveVMSize     ReqMem 
 ------------ ---------- ---------- ---------- ---------- ---------- ---------- 
 13703          18:27:01         24                                        31Gn 
 13703.batch    18:27:01         24   2225055K   3324466K  15583600K       31Gn 
 13703.extern   18:27:01         24       181K       188K    107948K       31Gn 
+Case mesh contains 
     cells:            1152000
+=======================================================

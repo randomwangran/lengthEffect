@@ -112,27 +112,52 @@
 
 ## gather jobinformation
 cd /home/superran/scratch/lengthEffect/workingFolder/case_z_100Layer
-sacct -j 13699 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem > log.jobInfo
+echo "I am in: " > log.jobInfo
+pwd >> log.jobInfo
+sacct -j 13699 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem >> log.jobInfo
+echo "Case mesh contains " >> log.jobInfo
 cat log.checkMesh | grep cells: >> log.jobInfo
+echo "=======================================================" >> log.jobInfo
 
 
 cd /home/superran/scratch/lengthEffect/workingFolder/case_z_20Layer
-sacct -j 13700 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem > log.jobInfo
+echo "I am in: " > log.jobInfo
+pwd >> log.jobInfo
+sacct -j 13700 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem >> log.jobInfo
+echo "Case mesh contains " >> log.jobInfo
 cat log.checkMesh | grep cells: >> log.jobInfo
-
+echo "=======================================================" >> log.jobInfo
 
 cd /home/superran/scratch/lengthEffect/workingFolder/case_z_40Layer
-sacct -j 13701 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem > log.jobInfo
+echo "I am in: " > log.jobInfo
+pwd >> log.jobInfo
+sacct -j 13701 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem >> log.jobInfo
+echo "Case mesh contains " >> log.jobInfo
 cat log.checkMesh | grep cells: >> log.jobInfo
+echo "=======================================================" >> log.jobInfo
 
 
 cd /home/superran/scratch/lengthEffect/workingFolder/case_z_60Layer
-sacct -j 13702 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem > log.jobInfo
+echo "I am in: " > log.jobInfo
+pwd >> log.jobInfo
+sacct -j 13702 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem >> log.jobInfo
+echo "Case mesh contains " >> log.jobInfo
 cat log.checkMesh | grep cells: >> log.jobInfo
-
+echo "=======================================================" >> log.jobInfo
 
 cd /home/superran/scratch/lengthEffect/workingFolder/case_z_80Layer
-sacct -j 13703 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem > log.jobInfo
+echo "I am in: " > log.jobInfo
+pwd >> log.jobInfo
+sacct -j 13703 --format=jobid,elapsed,ncpus,AveRSS,maxrss,AveVMSize,reqmem >> log.jobInfo
+echo "Case mesh contains " >> log.jobInfo
 cat log.checkMesh | grep cells: >> log.jobInfo
+echo "=======================================================" >> log.jobInfo
 
+
+## report into one file
+cat /home/superran/scratch/lengthEffect/workingFolder/case_z_100Layer/log.jobInfo >> /home/superran/scratch/lengthEffect/workingFolder/log.alljobInfo
+cat /home/superran/scratch/lengthEffect/workingFolder/case_z_20Layer/log.jobInfo >> /home/superran/scratch/lengthEffect/workingFolder/log.alljobInfo
+cat /home/superran/scratch/lengthEffect/workingFolder/case_z_40Layer/log.jobInfo >> /home/superran/scratch/lengthEffect/workingFolder/log.alljobInfo
+cat /home/superran/scratch/lengthEffect/workingFolder/case_z_60Layer/log.jobInfo >> /home/superran/scratch/lengthEffect/workingFolder/log.alljobInfo
+cat /home/superran/scratch/lengthEffect/workingFolder/case_z_80Layer/log.jobInfo  >> /home/superran/scratch/lengthEffect/workingFolder/log.alljobInfo
 

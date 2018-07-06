@@ -116,3 +116,48 @@ Fri Jul  6 09:42:15 EDT 2018 Entering into /home/superran/scratch/lengthEffect/w
 Fri Jul  6 09:42:15 EDT 2018 Submitted batch job 13828
 Fri Jul  6 09:42:15 EDT 2018 Entering into /home/superran/scratch/lengthEffect/workingFolder/case_z_80Layer
 Fri Jul  6 09:42:16 EDT 2018 Submitted batch job 13829
+Fri Jul  6 11:56:40 EDT 2018        JobID    Elapsed      NCPUS     AveRSS     MaxRSS  AveVMSize     ReqMem 
+Fri Jul  6 11:56:40 EDT 2018 ------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+Fri Jul  6 11:56:40 EDT 2018 13699          21:35:09         24                                        31Gn 
+Fri Jul  6 11:56:40 EDT 2018 13699.batch    21:35:11         24   3743510K   3800206K  21826016K       31Gn 
+Fri Jul  6 11:56:40 EDT 2018 13699.extern   21:35:09         24       149K       150K    107948K       31Gn 
+Fri Jul  6 11:56:40 EDT 2018     cells:            1440000
+Fri Jul  6 11:57:01 EDT 2018        JobID    Elapsed      NCPUS     AveRSS     MaxRSS  AveVMSize     ReqMem 
+Fri Jul  6 11:57:01 EDT 2018 ------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+Fri Jul  6 11:57:01 EDT 2018 13699          21:35:09         24                                        31Gn 
+Fri Jul  6 11:57:01 EDT 2018 13699.batch    21:35:11         24   3743510K   3800206K  21826016K       31Gn 
+Fri Jul  6 11:57:01 EDT 2018 13699.extern   21:35:09         24       149K       150K    107948K       31Gn 
+Fri Jul  6 11:57:01 EDT 2018     cells:            1440000
+Fri Jul  6 11:57:01 EDT 2018        JobID    Elapsed      NCPUS     AveRSS     MaxRSS  AveVMSize     ReqMem 
+Fri Jul  6 11:57:01 EDT 2018 ------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+Fri Jul  6 11:57:01 EDT 2018 13700          03:35:13         24                                        31Gn 
+Fri Jul  6 11:57:01 EDT 2018 13700.batch    03:35:13         24   1913933K   1953179K  19062444K       31Gn 
+Fri Jul  6 11:57:01 EDT 2018 13700.extern   03:35:13         24       182K       189K    107948K       31Gn 
+Fri Jul  6 11:57:01 EDT 2018     cells:            288000
+Fri Jul  6 11:57:01 EDT 2018        JobID    Elapsed      NCPUS     AveRSS     MaxRSS  AveVMSize     ReqMem 
+Fri Jul  6 11:57:01 EDT 2018 ------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+Fri Jul  6 11:57:01 EDT 2018 13701          09:46:27         24                                        31Gn 
+Fri Jul  6 11:57:01 EDT 2018 13701.batch    09:46:27         24   2329258K   2405771K  19580912K       31Gn 
+Fri Jul  6 11:57:01 EDT 2018 13701.extern   09:46:27         24       129K       129K    107948K       31Gn 
+Fri Jul  6 11:57:01 EDT 2018     cells:            576000
+Fri Jul  6 11:57:01 EDT 2018        JobID    Elapsed      NCPUS     AveRSS     MaxRSS  AveVMSize     ReqMem 
+Fri Jul  6 11:57:01 EDT 2018 ------------ ---------- ---------- ---------- ---------- ---------- ---------- 
+Fri Jul  6 11:57:01 EDT 2018 13702          16:42:47         24                                        31Gn 
+Fri Jul  6 11:57:01 EDT 2018 13702.batch    16:42:47         24   2777944K   2875499K  20423644K       31Gn 
+Fri Jul  6 11:57:01 EDT 2018 13702.extern   16:42:47         24       145K       145K    107948K       31Gn 
+Fri Jul  6 11:57:01 EDT 2018     cells:            864000
+Fri Jul  6 12:03:49 EDT 2018 I am in: 
+Fri Jul  6 12:03:49 EDT 2018 /home/superran/scratch/lengthEffect/workingFolder/case_z_100Layer
+Fri Jul  6 12:03:49 EDT 2018 Case mesh contains 
+Fri Jul  6 12:03:49 EDT 2018 I am in: 
+Fri Jul  6 12:03:49 EDT 2018 /home/superran/scratch/lengthEffect/workingFolder/case_z_20Layer
+Fri Jul  6 12:03:49 EDT 2018 Case mesh contains 
+Fri Jul  6 12:03:49 EDT 2018 I am in: 
+Fri Jul  6 12:03:49 EDT 2018 /home/superran/scratch/lengthEffect/workingFolder/case_z_40Layer
+Fri Jul  6 12:03:49 EDT 2018 Case mesh contains 
+Fri Jul  6 12:03:50 EDT 2018 I am in: 
+Fri Jul  6 12:03:50 EDT 2018 /home/superran/scratch/lengthEffect/workingFolder/case_z_60Layer
+Fri Jul  6 12:03:50 EDT 2018 Case mesh contains 
+Fri Jul  6 12:03:50 EDT 2018 I am in: 
+Fri Jul  6 12:03:50 EDT 2018 /home/superran/scratch/lengthEffect/workingFolder/case_z_80Layer
+Fri Jul  6 12:03:50 EDT 2018 Case mesh contains 
