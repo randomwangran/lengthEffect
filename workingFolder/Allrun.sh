@@ -103,7 +103,8 @@ curdir=$(pwd)
   		   #cp -f ../../preparingFolder/prepareScript/cpWithVariable.sh ./
 		   #sh cpWithVariable.sh
 		   #cp -f ../../preparingFolder/prepareScript/mp2NewPreRunScript.pbs ./
-		   sbatch --job-name=lengthEffect --output=test_%N_%J.log ./mp2NewPreRunScript.pbs pisoFoam
+		   #sbatch --job-name=lengthEffect --output=test_%N_%J.log ./mp2NewPreRunScript.pbs pisoFoam
+		   sbatch --job-name=checkMesh --output=checkMesh_%N_%J.log ./checkMesh.pbs checkMesh
 	       }
 
        done;
