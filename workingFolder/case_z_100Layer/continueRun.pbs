@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH --account=def-dting
+#SBATCH --ntasks=24
+#SBATCH --mem=31G
+#SBATCH --time=01-00:00
+
+mpirun -np 24 $1 -parallel > log.pisoFoam 2>&1
