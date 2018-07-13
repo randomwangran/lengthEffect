@@ -163,7 +163,33 @@
 
 
 
-## continue run 100 layer cases
+# ## continue run 100 layer cases
 
-cd /home/superran/scratch/lengthEffect/workingFolder/case_z_100Layer
-sbatch --job-name=100LayerContinue --output=continuePreRun_%N_%J.log ./continueRun.pbs pisoFoam
+# cd /home/superran/scratch/lengthEffect/workingFolder/case_z_100Layer
+# sbatch --job-name=100LayerContinue --output=continuePreRun_%N_%J.log ./continueRun.pbs pisoFoam
+
+## add new cases
+## same length in the span-wise direction
+## delta is 0.05 but double the number of the layers
+
+curdir=$(pwd)
+
+    for f in $curdir/*
+
+    ## although no big issue this time
+    ## forget to exclude the old cases
+        do [ -d $f -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_100Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_80Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_60Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_40Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_20Layer' ] &&
+
+            cd "$f" &&
+
+            echo Entering into $f &&
+
+               {
+                   # echo 'testNest'
+  		   #cp -f ../../preparingFolder/prepareScript/mp2NewPreRunScript.pbs ./
+		   #rm test.pbs
+		   #sh cpWithVariable.sh
+		   sbatch --job-name=lenEffDecreDistanceIncNodes --output=lenEffDecreDistanceIncNodes_%N_%J.log ./mp2NewPreRunScript.pbs pisoFoam
+	       }
+
+       done;

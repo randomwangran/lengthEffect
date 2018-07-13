@@ -1,0 +1,81 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.1
+Exec   : checkMesh
+Date   : Jul 13 2018
+Time   : 17:37:18
+Host   : "cp0750"
+PID    : 28439
+Case   : /scratch/superran/lengthEffect/workingFolder/caseDeltaHalfNumLayerDouble_z_80Layer
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Time = 0
+
+Mesh stats
+    points:           1176120
+    faces:            3480000
+    internal faces:   3432000
+    cells:            1152000
+    faces per cell:   6
+    boundary patches: 5
+    point zones:      0
+    face zones:       1
+    cell zones:       1
+
+Overall number of cells of each type:
+    hexahedra:     1152000
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     0
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+    Patch               Faces    Points   Surface topology                  
+    INLET               4800     4941     ok (non-closed singly connected)  
+    OUTLET              4800     4941     ok (non-closed singly connected)  
+    CYLINDER            9600     9720     ok (non-closed singly connected)  
+    FRONT_CYC           14400    14520    ok (non-closed singly connected)  
+    BACK_CYC            14400    14520    ok (non-closed singly connected)  
+
+Checking geometry...
+    Overall domain bounding box (-20 -20 0) (20 20 4)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (4.92563e-17 3.23349e-18 -3.44069e-16) OK.
+    Max cell openness = 2.71626e-16 OK.
+    Max aspect ratio = 19.8766 OK.
+    Minimum face area = 0.000112115. Maximum face area = 0.87406.  Face area magnitudes OK.
+    Min volume = 5.60576e-06. Max volume = 0.043703.  Total volume = 5021.11.  Cell volumes OK.
+    Mesh non-orthogonality Max: 1.9091e-06 average: 0
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.0648901 OK.
+    Coupled point location match (average 8.88178e-16) OK.
+
+Mesh OK.
+
+End
+
