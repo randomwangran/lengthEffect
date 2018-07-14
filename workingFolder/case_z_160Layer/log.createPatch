@@ -1,0 +1,41 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.1
+Exec   : createPatch
+Date   : Jul 14 2018
+Time   : 15:26:40
+Host   : "cp1606"
+PID    : 4969
+Case   : /scratch/superran/lengthEffect/workingFolder/case_z_160Layer
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading createPatchDict
+
+Adding new patch FRONT_CYC as patch 5 from 
+{
+    type            cyclic;
+    neighbourPatch  BACK_CYC;
+    matchTolerance  0.01;
+}
+
+Adding new patch BACK_CYC as patch 6 from 
+{
+    type            cyclic;
+    neighbourPatch  FRONT_CYC;
+    matchTolerance  0.01;
+}
+
+

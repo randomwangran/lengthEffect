@@ -1,0 +1,62 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.1
+Exec   : fluent3DMeshToFoam fluent3D_z_200Layer.msh
+Date   : Jul 14 2018
+Time   : 15:25:51
+Host   : "cp1608"
+PID    : 8941
+Case   : /scratch/superran/lengthEffect/workingFolder/case_z_200Layer
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Dimension of grid: 3
+Number of points: 2918520
+PointGroup: 11 start: 0 end: 2918519.  Reading points...done.
+Number of cells: 2880000
+CellGroup: 12 start: 0 end: 2879999 type: 1
+Number of faces: 8678400
+FaceGroup: 13 start: 0 end: 8601599.  Reading uniform faces...done.
+FaceGroup: 14 start: 8601600 end: 8615999.  Reading uniform faces...done.
+FaceGroup: 15 start: 8616000 end: 8627999.  Reading uniform faces...done.
+FaceGroup: 16 start: 8628000 end: 8639999.  Reading uniform faces...done.
+FaceGroup: 17 start: 8640000 end: 8663999.  Reading uniform faces...done.
+FaceGroup: 18 start: 8664000 end: 8678399.  Reading uniform faces...done.
+Zone: 12 name: FLUID type: fluid.  Reading zone data...done.
+Zone: 13 name: int_FLUID type: interior.  Reading zone data...done.
+Zone: 14 name: FRONT type: wall.  Reading zone data...done.
+Zone: 15 name: INLET type: velocity-inlet.  Reading zone data...done.
+Zone: 16 name: OUTLET type: pressure-outlet.  Reading zone data...done.
+Zone: 17 name: CYLINDER type: wall.  Reading zone data...done.
+Zone: 18 name: BACK type: wall.  Reading zone data...done.
+
+FINISHED LEXING
+
+Creating patch 0 for zone: 14 name: FRONT type: wall
+Creating patch 1 for zone: 15 name: INLET type: velocity-inlet
+Creating patch 2 for zone: 16 name: OUTLET type: pressure-outlet
+Creating patch 3 for zone: 17 name: CYLINDER type: wall
+Creating patch 4 for zone: 18 name: BACK type: wall
+Creating cellZone 0 name: FLUID type: fluid
+Creating faceZone 0 name: int_FLUID type: interior
+faceZone from Fluent indices: 0 to: 8601599 type: interior
+patch 0 from Fluent indices: 8601600 to: 8615999 type: wall
+patch 1 from Fluent indices: 8616000 to: 8627999 type: velocity-inlet
+patch 2 from Fluent indices: 8628000 to: 8639999 type: pressure-outlet
+patch 3 from Fluent indices: 8640000 to: 8663999 type: wall
+patch 4 from Fluent indices: 8664000 to: 8678399 type: wall
+
+Writing mesh to "/scratch/superran/lengthEffect/workingFolder/case_z_200Layer/constant/region0"
+
+End
+
