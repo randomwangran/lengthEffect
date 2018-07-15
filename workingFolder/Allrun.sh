@@ -1,5 +1,6 @@
 #!bin/bash
-
+## general info
+#  $Re = 1.4 \times 10^4$
 ## Useful commands #1:
 ### project structure:
 # .
