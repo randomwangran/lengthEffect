@@ -202,7 +202,7 @@ curdir=$(pwd)
 
     ## although no big issue this time
     ## forget to exclude the old cases
-        do [ -d $f -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_100Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_80Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_60Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_40Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_20Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/caseDeltaHalfNumLayerDouble_z_40Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/caseDeltaHalfNumLayerDouble_z_80Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/caseDeltaHalfNumLayerDouble_z_120Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/caseDeltaHalfNumLayerDouble_z_160Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/caseDeltaHalfNumLayerDouble_z_200Layer' ] &&
+       # do [ -d $f -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_100Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_80Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_60Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_40Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/case_z_20Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/caseDeltaHalfNumLayerDouble_z_40Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/caseDeltaHalfNumLayerDouble_z_80Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/caseDeltaHalfNumLayerDouble_z_120Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/caseDeltaHalfNumLayerDouble_z_160Layer' -a $f != '/home/superran/scratch/lengthEffect/workingFolder/caseDeltaHalfNumLayerDouble_z_200Layer' ] &&
 
             cd "$f" &&
 
@@ -212,9 +212,11 @@ curdir=$(pwd)
                    # echo 'testNest'
 		   # cp -f ../../preparingFolder/prepareScript/cpWithVariable.sh ./
 		   # sh cpWithVariable.sh
-  		   cp -f ../../preparingFolder/prepareScript/mp2NewPreRunScript.pbs ./
-		   wait 2
-		   sbatch --job-name=lenEffIncLenghTo20D --output=lenEffDecreDistanceIncNodes_%N_%J.log ./mp2NewPreRunScript.pbs pisoFoam
+  		   # cp -f ../../preparingFolder/prepareScript/mp2NewPreRunScript.pbs ./
+		   # wait 2
+		   # sbatch --job-name=lenEffIncLenghTo20D --output=lenEffDecreDistanceIncNodes_%N_%J.log ./mp2NewPreRunScript.pbs pisoFoam
+
+		   rm -rf processor*
 	       }
 
        done;
